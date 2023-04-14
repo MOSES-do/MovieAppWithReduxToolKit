@@ -6,9 +6,11 @@ const Layout = () => {
     return (
         <div className="app">
             <Header />
+
             <div className="container">
                 <Outlet />
             </div>
+
             <Footer />
         </div>
     )

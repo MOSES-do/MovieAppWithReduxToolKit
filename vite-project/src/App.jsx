@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Home, MovieDetail, PageNotFound, Layout } from './components/index'
 import { Routes, Route, Navigate } from "react-router-dom"
 
@@ -12,7 +11,7 @@ function App() {
         <Route index element={<Home />} />
 
         <Route path="movie" >
-          <Route path=":imdbId" element={<MovieDetail />} />
+          <Route path=":imdbID" element={<MovieDetail />} />
         </Route>
 
         {/* 404 component */}
