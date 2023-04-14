@@ -7,6 +7,7 @@ import { FaRegStar } from 'react-icons/fa'
 
 
 const MovieDetail = () => {
+
     const { imdbID } = useParams();
     const dispatch = useDispatch();
     const { selectedMovieOrShow } = useSelector((state) => state.movies)

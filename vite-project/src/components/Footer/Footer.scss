@@ -8,4 +8,6 @@
     align-items: center;
     color: $font-primary;
     flex-direction: column;
+    position: sticky;
+    bottom: 0;
 }

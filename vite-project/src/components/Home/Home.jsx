@@ -2,21 +2,23 @@ import React, { useEffect } from 'react'
 import { MovieListing } from '../index'
 import { useDispatch } from "react-redux"
 import { fetchAsyncMovies, fetchAsyncSeries } from '../../features/movies/movieSlice'
+import './Home.scss'
+
 
 const Home = () => {
 
     const dispatch = useDispatch();
 
-    useEffect(() => {
-        let mount = true;
+    const movieQuery = "Harry";
+    const seriresQuery = "Friends"
 
-        if (mount) {
-            dispatch(fetchAsyncMovies())
-            dispatch(fetchAsyncSeries())
-        }
+    useEffect(() => {
+
+        dispatch(fetchAsyncMovies(movieQuery))
+        dispatch(fetchAsyncSeries(seriresQuery))
+
 
         return () => {
-            mount = false;
         }
     }, [dispatch])
 
