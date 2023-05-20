@@ -16,7 +16,6 @@ const Header = () => {
         if (term === "") return alert("Please enter search term")
         dispatch(fetchAsyncMovies(term))
         dispatch(fetchAsyncSeries(term))
-
         setTerm("")
     }
 
